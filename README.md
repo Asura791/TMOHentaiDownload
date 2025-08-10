@@ -8,10 +8,14 @@ Script para descargar mangas de TMOhentai y convertirlos a PDF. Versión minimal
 - Pip instalado
 
 ## Instalación
-1. Clona el repositorio:
 ```bash
-git clone https://github.com/tu_usuario/TMOHentai.git
-cd TMOHentai
-#Instalación
+pkg update && pkg upgrade
+pkg install python
+pkg install python-pip
+pip install --upgrade pip
 pip install requests beautifulsoup4 pillow
+pkg install git nano
+termux-setup-storage
+
+git clone https://github.com/Asura791/TMOHentaiDownload
 python TMOHentai.py
